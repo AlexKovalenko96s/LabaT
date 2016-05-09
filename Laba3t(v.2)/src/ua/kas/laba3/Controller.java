@@ -1,26 +1,19 @@
 package ua.kas.laba3;
 
-import java.awt.Component;
 import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 
 import javax.swing.JOptionPane;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class Controller{
 
-	@FXML Button b3;
-	@FXML Button b4;
 	@FXML TextField tf;
 	static String key;
 	static Software s = new Software();
@@ -30,10 +23,6 @@ public class Controller{
 	static DelReg dr = new DelReg();
 	static Error er = new Error();
 	static String path = "HKEY_CLASSES_ROOT\\txtfile\\shell\\open\\command";
-	
-	public static void showDialog(Component c) {
-		JOptionPane.showMessageDialog(c, "Bye Bye!");
-	}
 	
 	public static void Full() {
 		String addres = "HKEY_CURRENT_USER\\Software\\SPLab3t";

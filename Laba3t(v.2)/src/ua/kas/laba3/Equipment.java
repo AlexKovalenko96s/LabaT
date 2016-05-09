@@ -24,7 +24,6 @@ public class Equipment {
 		BufferedWriter bfOut = new BufferedWriter(new OutputStreamWriter(proc.getOutputStream(), "utf-8"));
 
 		int i = 0;
-		Array[] ii = new Array[]{};
 		
 		while ((i = bfIn.read()) != 62) {
 			System.out.print((char) i);
