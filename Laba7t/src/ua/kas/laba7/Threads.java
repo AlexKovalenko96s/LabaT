@@ -22,10 +22,6 @@ public class Threads {
 		String t1 = sdf.format(cal.getTime());
 		return t1;
 	}
-	
-	public static void close_one(){
-		
-	}
 
 	public static void start() {
 
@@ -95,7 +91,6 @@ public class Threads {
 			int abs = Math.abs(think2 - think1);
 			think = abs;
 		}
-
 		System.out.println(think + " milisec.");
 	}
 
