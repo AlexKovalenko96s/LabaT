@@ -31,23 +31,11 @@ public class Controller{
 		ar.run(addres, name, value);
 	}
 
-	public static void delFull() {
-		String addres = "HKEY_CURRENT_USER\\Software\\SPLab3t";
-		String name = "FULL_key:111";
-		dr.run(addres, name);
-	}
-
 	public static void Trial() {
 		String addres = "HKEY_CURRENT_USER\\Software\\SPLab3t";
 		String name = "TRIAL_key:000";
 		String value = "now";
 		ar.run(addres, name, value);
-	}
-	
-	public static void delTrial() {
-		String addres = "HKEY_CURRENT_USER\\Software\\SPLab3t";
-		String name = "TRIAL_key:000";
-		dr.run(addres, name);
 	}
 
 	public void path(){
